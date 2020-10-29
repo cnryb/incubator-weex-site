@@ -14,7 +14,13 @@ cd .deploy_git
 # git fetch apache asf-site
 # git reset apache/asf-site
 mv ../docs/.vuepress/dist/* ./
+echo move to deploy_git successful
 rm -rf ./zh/community/biz-emas.html
+echo remove biz-emas.html
+node ../scripts/generate-redirect-html.js
+echo generate redirect html
+node ../scripts/generate-htaccess-file.js
+echo generate htaccess file
 node ../scripts/generate-redirect-html.js
 node ../scripts/generate-htaccess-file.js
 # DATE=`date '+%Y-%m-%d %H:%M:%S'`
