@@ -21,8 +21,6 @@ node ../scripts/generate-redirect-html.js
 echo generate redirect html
 node ../scripts/generate-htaccess-file.js
 echo generate htaccess file
-node ../scripts/generate-redirect-html.js
-node ../scripts/generate-htaccess-file.js
 # DATE=`date '+%Y-%m-%d %H:%M:%S'`
 # git add -A
 # git commit -m "Site updated: ${DATE}"
